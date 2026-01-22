@@ -1,0 +1,96 @@
+package oop.bank.SimpleDigitalBank.entity;
+
+//Поля: ID, Имя, Фамилия, Логин, Пароль, Баланс, Номер карты (3-значное число), статус аккаунта (Enum).
+
+import oop.bank.SimpleDigitalBank.Enums.AccountStatus;
+
+public class User {
+    private Integer id;
+    private String firstName;
+    private String lastName;
+    private String login;
+    private String password;
+    private double balance;
+    private int numberCard;
+    private AccountStatus accountStatus;
+
+    public User(Integer id, String firstName, String lastName, String login, String password, double balance, int numberCard, AccountStatus accountStatus) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.login = login;
+        this.password = password;
+        this.balance = balance;
+        this.numberCard = numberCard;
+        this.accountStatus = accountStatus;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public int getNumberCard() {
+        return numberCard;
+    }
+
+    public void setNumberCard(int numberCard) {
+        this.numberCard = numberCard;
+    }
+
+    public AccountStatus getAccountStatus() {
+        return accountStatus;
+    }
+
+    public void setAccountStatus(AccountStatus accountStatus) {
+        this.accountStatus = accountStatus;
+    }
+
+    @Override
+    public String toString() {
+        return "Клиент #" + id + ": " + firstName + " " + lastName + " (" + accountStatus + ")";
+    }
+}
