@@ -1,6 +1,6 @@
 package oop.bank;
 
-import oop.bank.Exception.UserRefusedException;
+import oop.bank.exception.UserRefusedException;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package oop.bank.Exception;
+package oop.bank.exception;
 
 public class UserRefusedException extends Exception {
     public UserRefusedException(String message) {

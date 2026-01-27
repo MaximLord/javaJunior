@@ -1,15 +1,16 @@
 package oop.bank.SimpleDigitalBank;
 
-import oop.bank.Exception.UserRefusedException;
 import oop.bank.SimpleDigitalBank.entity.Bank;
+import oop.bank.SimpleDigitalBank.entity.Terminal;
 import oop.bank.SimpleDigitalBank.entity.User;
 import oop.bank.SimpleDigitalBank.service.BankService;
+import oop.bank.SimpleDigitalBank.service.TerminalService;
 import oop.bank.SimpleDigitalBank.service.UserService;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static oop.bank.SimpleDigitalBank.Enums.AccountStatus.ACTIVE;
+import static oop.bank.SimpleDigitalBank.enums.AccountStatus.ACTIVE;
 
 
 public class Start {
@@ -27,6 +28,9 @@ public class Start {
         //Вывод информации о клиентах банка
         UserService userService = new UserService();
         userService.usersList(sber);
+
+        Terminal terminal = new Terminal(324, sber);
+        TerminalService terminalService = new TerminalService();
 
 //        //Вывод информации о банке
 //        BankService bankService = new BankService();

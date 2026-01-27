@@ -15,7 +15,6 @@ public class Bank {
         Random random = new Random();
         this.bankName = bankName;
         this.bic = random.nextInt(10000);
-        this.users = new HashMap<>();
     }
 
     public String getBankName() {

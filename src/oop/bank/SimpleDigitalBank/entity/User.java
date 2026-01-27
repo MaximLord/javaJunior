@@ -2,7 +2,7 @@ package oop.bank.SimpleDigitalBank.entity;
 
 //Поля: ID, Имя, Фамилия, Логин, Пароль, Баланс, Номер карты (3-значное число), статус аккаунта (Enum).
 
-import oop.bank.SimpleDigitalBank.Enums.AccountStatus;
+import oop.bank.SimpleDigitalBank.enums.AccountStatus;
 
 public class User {
     private Integer id;

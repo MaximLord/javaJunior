@@ -1,10 +1,9 @@
 package oop.bank.SimpleDigitalBank.service;
 
-import oop.bank.Exception.UserRefusedException;
+import oop.bank.exception.UserRefusedException;
 import oop.bank.SimpleDigitalBank.entity.Bank;
 import oop.bank.SimpleDigitalBank.entity.User;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;

@@ -1,7 +1,5 @@
 package oop.bank;
 
-import oop.bank.Exception.UserRefusedException;
-
 import java.util.ArrayList;
 import java.util.List;
 
