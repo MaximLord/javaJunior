@@ -12,5 +12,8 @@ public class Task_2_1 {
             int sumS = sum * i;
             System.out.println(sumS);
         }
+
     }
 }
+
+
