@@ -7,6 +7,7 @@ package javaCore.topic_1;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class Task_5_5 {
     public static void main(String[] args) {
@@ -31,6 +32,39 @@ public class Task_5_5 {
 
         System.out.println("\nНазад в будущее: Создай список из 10 чисел. Используя ListIterator, дойди до конца списка, а затем выведи элементы в обратном порядке от конца к началу.\n");
 
+        List<Integer> listInt = new ArrayList<>();
+        for (int i = 0; i < 11; i++) {
+            listInt.add(i);
+        }
+        System.out.println(listInt);
 
+        ListIterator<Integer> listIterator = listInt.listIterator();
+        while (listIterator.hasNext()) {
+            Integer num = listIterator.next();
+            System.out.println(num + " ");
+        }
+
+        while (listIterator.hasPrevious()) {
+            Integer numPrevious = listIterator.previous();
+            System.out.println(numPrevious + " ");
+        }
+
+        System.out.println("Вставка в процессе: Создай список имен. С помощью ListIterator, если встретишь имя \"Admin\", сразу после него вставь строку \"--- Logged In ---\" (используй метод .add() итератора).");
+
+        List<String> strList = new ArrayList<>();
+        strList.add("Admin");
+        strList.add("User");
+        strList.add("User");
+        strList.add("Admin");
+
+        ListIterator<String> it = strList.listIterator();
+
+        while (it.hasNext()) {
+            String str = it.next();
+            if (str.equals("Admin")) {
+                it.add("--- Logged In ---");
+            }
+        }
+        System.out.println(strList);
     }
 }
