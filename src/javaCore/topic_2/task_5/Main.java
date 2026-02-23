@@ -5,6 +5,7 @@ package javaCore.topic_2.task_5;
 
 public class Main {
     public static void main(String[] args) {
-
+        Electronics laptop = new Electronics("lenovo", 97000, 12);
+        laptop.info();
     }
 }
