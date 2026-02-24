@@ -13,8 +13,8 @@ public class Main {
         deviceLamp.button();
 
         RemoteControl deviceFan = new RemoteControl(fan);
-        deviceLamp.button();
-        deviceLamp.button();
-        deviceLamp.button();
+        deviceFan.button();
+        deviceFan.button();
+        deviceFan.button();
     }
 }
