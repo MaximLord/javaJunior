@@ -6,6 +6,7 @@ package javaCore.topic_2.task_10;
 
 public class Main {
     public static void main(String[] args) {
-
+        DatabaseConnection databaseConnection1 = new DatabaseConnection();
+        DatabaseConnection databaseConnection2 = new DatabaseConnection();
     }
 }
