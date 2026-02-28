@@ -4,7 +4,6 @@ import oop.bank.SimpleDigitalBank.entity.Bank;
 import oop.bank.SimpleDigitalBank.entity.Terminal;
 import oop.bank.SimpleDigitalBank.entity.User;
 import oop.bank.SimpleDigitalBank.service.BankService;
-import oop.bank.SimpleDigitalBank.service.TerminalService;
 import oop.bank.SimpleDigitalBank.service.UserService;
 
 import java.util.ArrayList;
@@ -30,7 +29,7 @@ public class Start {
         userService.usersList(sber);
 
         Terminal terminal = new Terminal(324, sber);
-        TerminalService terminalService = new TerminalService();
+        //TerminalService terminalService = new TerminalService();
 
 //        //Вывод информации о банке
 //        BankService bankService = new BankService();
